@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <linearGradient id="bolt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#bg)" />
+  <!-- Inner Shield / Circle -->
+  <circle cx="256" cy="256" r="180" fill="#0f172a" fill-opacity="0.35" stroke="#ffffff" stroke-opacity="0.25" stroke-width="8" />
+  <!-- Speed Rings -->
+  <circle cx="256" cy="256" r="140" fill="none" stroke="url(#bolt)" stroke-width="6" stroke-dasharray="24 16" stroke-linecap="round" />
+  <!-- Dynamic Lightning Bolt / 5-Second Rocket -->
+  <path d="M280 120 L180 270 L250 270 L220 392 L340 240 L270 240 Z" fill="url(#bolt)" filter="url(#glow)" />
+  <!-- Center Star spark -->
+  <circle cx="340" cy="170" r="12" fill="#ffffff" />
+  <circle cx="160" cy="340" r="8" fill="#ffffff" opacity="0.8" />
+</svg>

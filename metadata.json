@@ -1,0 +1,6 @@
+{
+  "name": "FocoTotal - Produtividade Gamificada PWA",
+  "description": "App PWA mobile nativo baseado no guia Productivity for Procrastinators: método dos 5 Segundos, Pomodoro, S.M.A.R.T. To-Do, Desclutter e Gamificação com XP e Níveis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
